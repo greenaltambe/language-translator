@@ -1,0 +1,38 @@
+<TranslatorLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+
+    Label:
+        id: transcribed_label
+        text: "Transcribed text will appear here"
+        font_name: "HindiFont"
+        font_size: 18
+        size_hint_y: 0.2
+        text_size: self.width, None
+        halign: 'center'
+        valign: 'middle'
+
+    Label:
+        id: translated_label
+        text: "Translated text will appear here"
+        font_name: "HindiFont"
+        font_size: 18
+        size_hint_y: 0.2
+        text_size: self.width, None
+        halign: 'center'
+        valign: 'middle'
+
+    BoxLayout:
+        size_hint_y: 0.2
+        spacing: 20
+
+        Button:
+            text: "Record"
+            font_size: 20
+            on_press: root.record()
+
+        Button:
+            text: "Play"
+            font_size: 20
+            on_press: root.speak(root.ids.translated_label.text)

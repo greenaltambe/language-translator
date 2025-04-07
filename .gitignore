@@ -172,3 +172,28 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Audio recordings and outputs
+*.wav
+*.mp3
+audio/
+recordings/
+
+# Whisper/HuggingFace caches (if not already covered)
+~/.cache/whisper/
+~/.cache/huggingface/
+
+# Kivy specific
+*.atlas
+*.kv~  # Temporary kv file backups
+
+# Buildozer and Android build folders
+.buildozer/
+bin/
+*.apk
+
+# Custom fonts
+*.ttf
+fonts/
+
+models/
