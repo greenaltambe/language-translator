@@ -68,7 +68,7 @@ class TranslatorLayout(BoxLayout):
         self.ids.translated_label.text = "Translating..."
         translated = argostranslate.translate.translate(text, from_code, to_code)
         self.ids.translated_label.text = translated
-        self.speak(translated)
+        # self.speak(translated)
 
     def speak(self, text):
         engine = pyttsx3.init()
